@@ -1,0 +1,19 @@
+// abstracts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+//base
+@import './base/reset';
+@import './base/preset';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+
+//@componet
+@import './component/parner_animation';
+@import './component/section_title';
+
+//pages
+@import './pages/home';

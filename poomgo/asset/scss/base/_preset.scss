@@ -1,0 +1,17 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+body{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.cont-wrapper{
+    width: 1224px;
+    margin: 0 auto;
+}
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+//crossbrowser
