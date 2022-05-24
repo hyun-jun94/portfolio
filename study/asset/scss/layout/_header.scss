@@ -1,0 +1,99 @@
+.header-area {
+    .cont-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border: 1px solid #eee;
+    }
+    .start {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .end {
+        a {
+            display: inline-block;
+            border-radius: 20px;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: background .35s;
+
+            &:first-child {
+                border: 1px solid #eee;
+
+                &:hover {
+                    background: #ddd;
+                }
+            }
+
+            &:last-child {
+                background: #0057ff;
+                color: #fff;
+
+                &:hover {
+                    background: #0042c5;
+                }
+            }
+        }
+    }
+    .header-search {
+        padding: 10px 20px;
+    }
+    fieldset {
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid #aaa;
+        display: flex;
+        align-self: center;
+        @include mobile {
+            width: 100%;
+            height: 100px;
+            flex-direction: column;
+            border: none;
+            border-bottom: 1px solid #eee;
+            border-radius: 0;
+        }
+    }
+    .search-bar {
+        width: 50%;
+        padding: 0 30px;
+        border-radius: 50px 0 0 50px;
+        border: none;
+        background: #eee;
+        box-sizing: border-box;
+        font-size: 20px;
+        @include mobile {
+            border: none;
+            width: 100%;
+            border-radius: 50px;
+            height: 50px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .search-nav {
+        width: 50%;
+        border-left: 1px solid #ddd;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include mobile {
+            border: none;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        .link-more {
+            padding: 12px 18px;
+            border-radius: 20px;
+            transition: .35s;
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
